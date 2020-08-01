@@ -1,0 +1,15 @@
+name: echo
+
+on: 
+  push:
+    branches:
+      - master
+      - develop
+
+jobs:
+  echo:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: echo
+        run: echo "Test"
+
